@@ -1,0 +1,159 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script>
+        var numero = ""
+        var numero1 = 0
+        var operacion = ""
+        function num1 (num)  {
+            numero = numero + "" + num
+            console.log(numero)
+            document.getElementById("myText").value = numero;
+        }
+        function num2 (num)  {
+            numero = numero + "" + num
+            console.log(num)
+            document.getElementById("myText").value = numero;
+        }
+        function num3 (num)  {
+            numero = numero + "" + num
+            console.log(num)
+            document.getElementById("myText").value = numero;
+        }
+        function num4 (num)  {
+            numero = numero + "" + num
+            console.log(num)
+            document.getElementById("myText").value = numero;
+        }
+        function num5 (num)  {
+            numero = numero + "" + num
+            console.log(num)
+            document.getElementById("myText").value = numero;
+        }
+        function num6 (num)  {
+            numero = numero + "" + num
+            console.log(num)
+            document.getElementById("myText").value = numero;
+        }
+        function num7 (num)  {
+            numero = numero + "" + num
+            console.log(num)
+            document.getElementById("myText").value = numero;
+        }
+        function num8 (num)  {
+            numero = numero + "" + num
+            console.log(num)
+            document.getElementById("myText").value = numero;
+        }
+        function num9 (num)  {
+            numero = numero + "" + num
+            console.log(num)
+            document.getElementById("myText").value = numero;
+        }
+        function num0 (num)  {
+            numero = numero + "" + num
+            console.log(num)
+            document.getElementById("myText").value = numero;
+        }
+        function limpiar () {
+            numero = ""
+            console.log(numero)
+            document.getElementById("myText").value = numero;
+        }
+
+        function suma () {
+            numero1 = numero;
+            numero = ""
+            document.getElementById("myText").value = numero;
+            console.log(numero1)
+            operacion = "suma"
+        }
+        function menos () {
+            numero1 = numero;
+            numero = ""
+            document.getElementById("myText").value = numero;
+            console.log(numero1)
+            operacion = "menos"
+        }
+        function mult () {
+            numero1 = numero;
+            numero = ""
+            document.getElementById("myText").value = numero;
+            console.log(numero1)
+            operacion = "mult"
+        }
+        function div () {
+            numero1 = numero;
+            numero = ""
+            document.getElementById("myText").value = numero;
+            console.log(numero1)
+            operacion = "div"
+        }
+
+        function igual () {
+            var resultado
+            var nume = parseInt(numero);
+            var nume1 = parseInt(numero1);
+            console.log(nume)
+            if(operacion == "suma"){
+                resultado = nume + nume1
+                document.getElementById("myText").value = resultado;
+            }
+            if(operacion == "menos"){
+                resultado = nume1 - nume
+                document.getElementById("myText").value = resultado;
+            }
+            if(operacion == "mult"){
+                resultado = nume * nume1
+                document.getElementById("myText").value = resultado;
+            }
+            if(operacion == "div"){
+                resultado = nume1 / nume
+                document.getElementById("myText").value = resultado;
+            }
+        }
+
+        function imprimir(codigo) {
+            console.log(codigo)
+            document.getElementById("myText").value = codigo;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <input class="input" id="myText" name="myText" type="text"/>
+            <div class="num">
+                <div class="numbers">
+                    <button onclick="num1(1)" class="btn">1</button>
+                    <button onclick="num1(2)" class="btn">2</button>
+                    <button onclick="num1(3)" class="btn">3</button>
+                    <button onclick="num1(4)" class="btn">4</button>
+                    <button onclick="num1(5)" class="btn">5</button>
+                    <button onclick="num1(6)" class="btn">6</button>
+                    <button onclick="num1(7)" class="btn">7</button>
+                    <button onclick="num1(8)" class="btn">8</button>
+                    <button onclick="num1(9)" class="btn">9</button>
+                    <button onclick="limpiar()" class="btn">CE</button>
+                    <button onclick="num1(0)" class="btn">0</button>
+                    <button onclick="igual()" class="btn">=</button>
+                </div>
+                <div class="numbers">
+                    <button onclick="suma()" class="metodo">+</button>
+                    <button onclick="menos()" class="metodo">-</button>
+                    <button onclick="mult()" class="metodo">x</button>
+                    <button onclick="div()" class="metodo">/</button>
+                </div>
+            </div>
+            <div>
+                <button onclick="imprimir(1620079602)" class="imp">
+                    IMPRIMIR CODIGO
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
